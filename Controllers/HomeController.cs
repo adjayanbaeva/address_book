@@ -1,10 +1,18 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using AddressBook.Models;
 
 namespace AddressBook.Controllers
 {
     public class HomeController : Controller
     {
-      [Route("/hello")]
-      public string Hello() { return "Hello friend!"; }
+      [HttpGet("/")]
+      public ActionResult Index()
+      {
+        List<Contact> allContacts = Contact.GetAll();
+        return View(allContacts);
+      }
+
+
     }
 }
