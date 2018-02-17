@@ -14,7 +14,7 @@ namespace AddressBook.Controllers
       }
 
       [HttpGet("/contacts/new")]
-      public ActionResult CreateForm()
+      public ActionResult ContactForm()
       {
         return View();
       }
