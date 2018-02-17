@@ -9,8 +9,7 @@ namespace AddressBook.Controllers
       [HttpGet("/contacts")]
       public ActionResult Index()
       {
-        Contact newItem = new Item(Request.Query["new-contact"]);
-        return View(newContact);
+        return View();
       }
 
       [HttpGet("/contacts/new")]
@@ -19,7 +18,13 @@ namespace AddressBook.Controllers
         return View();
       }
 
-
+      [HttpPost("/contacts")]
+      public ActionResult Create()
+      {
+        Contact newContact = new Contact(Request.Form["new-contact"]);
+        newContact.Save();
+        return View("Index", newContact);
+      }
 
 
     }

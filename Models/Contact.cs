@@ -11,7 +11,7 @@ namespace AddressBook.Models
     private int _phoneNumber;
     private int _id;
 
-    // private static List<Contact> _instances = new List<Contact> {};
+    private static List<Contact> _instances = new List<Contact> {};
 
     public Contact (string name, string address, int phoneNumber)
     {
@@ -57,10 +57,15 @@ namespace AddressBook.Models
     }
 
 
-    // public static List<Contact> GetAll()
-    // {
-    //   return _instances;
-    // }
+    public static List<Contact> GetAll()
+    {
+      return _instances;
+    }
+
+    public void Save()
+  {
+    _instances.Add(this);
+  }
     // public static void ClearAll()
     // {
     //   _instances.Clear();
