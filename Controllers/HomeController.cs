@@ -34,6 +34,13 @@ namespace AddressBook.Controllers
         return View(contact);
       }
 
+      [HttpPost("/contacts/delete")]
+        public ActionResult DeleteAll()
+        {
+            Item.ClearAll();
+            return View();
+        }
+
 
     }
 }

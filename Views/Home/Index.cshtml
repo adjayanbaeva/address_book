@@ -4,7 +4,11 @@
   {
     <li><a href='/@contact.GetId()'>@contact.GetName()</a></li>
   }
-  
+
 
 </ul>
 <a href="/contacts/new">Add a new contact.</a>
+
+<form action="/contacts/delete" method="post">
+  <button type="submit" name="button">Clear All Contacts</button>
+</form>
