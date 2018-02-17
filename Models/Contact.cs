@@ -1,13 +1,17 @@
+using System.Collections.Generic;
+
+
 namespace AddressBook.Models
+
 {
   public class Contact
   {
     private string _name;
     private string _address;
     private int _phoneNumber;
-    private int _id
+    private int _id;
 
-    private static List<Contact> _addressbook = new List<Contact> {};
+    private static List<Contact> _instances = new List<Contact> {};
 
     public Contact (string name, string address, int phoneNumber)
     {
@@ -51,7 +55,7 @@ namespace AddressBook.Models
     {
       return _id;
     }
-    
+
 
     public static List<Contact> GetAll()
     {
