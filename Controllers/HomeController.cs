@@ -1,4 +1,4 @@
-// using System.Collections.Generic;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using AddressBook.Models;
 
@@ -23,6 +23,7 @@ namespace AddressBook.Controllers
       {
         Contact newContact = new Contact(Request.Form["new-contact"]);
         newContact.Save();
+        List<Contact> allContacts = Item.GetAll();
         return View("Index", newContact);
       }
 
