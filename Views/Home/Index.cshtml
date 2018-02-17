@@ -1,8 +1,10 @@
 <h1>AddressBook</h1>
 <ul>
-  <li>@Model.GetName()</li>
-  <li>@Model.GetAddress()</li>
-  <li>@Model.GetphoneNumber()</li>
+  @foreach(var contact in Model)
+  {
+    <li><a href='/@contact.GetId()'>@contact.GetName()</a></li>
+  }
+  
 
 </ul>
 <a href="/contacts/new">Add a new contact.</a>

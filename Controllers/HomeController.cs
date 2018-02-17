@@ -24,7 +24,14 @@ namespace AddressBook.Controllers
         Contact newContact = new Contact(Request.Form["new-contact"]);
         newContact.Save();
         List<Contact> allContacts = Item.GetAll();
-        return View("Index", newContact);
+        return View("Index", allContacts);
+      }
+
+      [HttpGet("/{id}")]
+      public ActionResult Details(int id)
+      {
+        Contact contact = Contact.Find(id);
+        return View(contact);
       }
 
 
