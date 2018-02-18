@@ -8,12 +8,12 @@ namespace AddressBook.Models
   {
     private string _name;
     private string _address;
-    private int _phoneNumber;
+    private string _phoneNumber;
     private int _id;
 
     private static List<Contact> _instances = new List<Contact> {};
 
-    public Contact (string name, string address, int phoneNumber)
+    public Contact (string name, string address, string phoneNumber)
     {
       _name = name;
       _address = address;
@@ -42,11 +42,11 @@ namespace AddressBook.Models
     }
 
 
-    public int GetphoneNumber()
+    public string GetphoneNumber()
     {
       return _phoneNumber;
     }
-    public void SetphoneNumber(int newphoneNumber)
+    public void SetphoneNumber(string newphoneNumber)
     {
       _phoneNumber = newphoneNumber;
     }
@@ -66,14 +66,14 @@ namespace AddressBook.Models
   {
     _instances.Add(this);
   }
-    // public static void ClearAll()
-    // {
-    //   _instances.Clear();
-    // }
-    // public static Contact Find(int searchId)
-    // {
-    //   return _instances[searchId-1];
-    // }
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
+    public static Contact Find(int searchId)
+    {
+      return _instances[searchId-1];
+    }
 
 
   }
