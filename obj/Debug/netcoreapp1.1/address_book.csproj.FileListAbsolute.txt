@@ -6,3 +6,13 @@
 /Users/Guest/Desktop/address_book/bin/Debug/netcoreapp1.1/address_book.pdb
 /Users/Guest/Desktop/address_book/obj/Debug/netcoreapp1.1/address_book.dll
 /Users/Guest/Desktop/address_book/obj/Debug/netcoreapp1.1/address_book.pdb
+/Users/ainurdzhaianbaeva/Desktop/address_book/bin/Debug/netcoreapp1.1/address_book.deps.json
+/Users/ainurdzhaianbaeva/Desktop/address_book/bin/Debug/netcoreapp1.1/address_book.runtimeconfig.json
+/Users/ainurdzhaianbaeva/Desktop/address_book/bin/Debug/netcoreapp1.1/address_book.runtimeconfig.dev.json
+/Users/ainurdzhaianbaeva/Desktop/address_book/bin/Debug/netcoreapp1.1/address_book.dll
+/Users/ainurdzhaianbaeva/Desktop/address_book/bin/Debug/netcoreapp1.1/address_book.pdb
+/Users/ainurdzhaianbaeva/Desktop/address_book/obj/Debug/netcoreapp1.1/address_book.csproj.CoreCompileInputs.cache
+/Users/ainurdzhaianbaeva/Desktop/address_book/obj/Debug/netcoreapp1.1/address_book.AssemblyInfoInputs.cache
+/Users/ainurdzhaianbaeva/Desktop/address_book/obj/Debug/netcoreapp1.1/address_book.AssemblyInfo.cs
+/Users/ainurdzhaianbaeva/Desktop/address_book/obj/Debug/netcoreapp1.1/address_book.dll
+/Users/ainurdzhaianbaeva/Desktop/address_book/obj/Debug/netcoreapp1.1/address_book.pdb

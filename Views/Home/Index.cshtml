@@ -1,19 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+
 <div class="container">
-  <h1>Address Book</h1>
+  <h2>Address Book</h2>
+  <h3>My list of Contacts:</h3>
+  <ul>
+    @foreach(var contact in Model)
+    {
+      <li><a href="/contacts/details/@contact.GetId()">@contact.GetName()</a></li>
+    }
+  </ul>
+  <a href="/contacts/new">Add a new contact.</a>
+
+  <form action="/contacts/delete" method="post">
+    <button type="submit" name="button">Clear All Contacts</button>
+  </form>
 </div>
-
-
-<h3>My list of Contacts</h3>
-<ul>
-  @foreach(var contact in Model)
-  {
-    <li><a href="/contacts/details/@contact.GetId()">@contact.GetName()</a></li>
-  }
-
-
-</ul>
-<a href="/contacts/new">Add a new contact.</a>
-
-<form action="/contacts/delete" method="post">
-  <button type="submit" name="button">Clear All Contacts</button>
-</form>
