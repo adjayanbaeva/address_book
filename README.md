@@ -1,6 +1,6 @@
 # Address Book
 
-#### A web application that allows a user to store a list of contacts, 02/17/2018 
+#### A web application that allows a user to store a list of contacts
 
 #### By _Ainur Dzhaianbaeva_
 
